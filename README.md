@@ -108,4 +108,62 @@ Object.values(webpackJsonp.push([
             }]) && c(u.prototype, l), d && c(u, d), r
         }
 ```
+### Get Current User Info 
+
+<a href=""><img src="https://imgur.com/HAjfyO4.jpg" style="max-width:100%;"></a>
+```bash
+Object.values(webpackJsonp.push([
+    [], {
+        ['']: (_, e, r) => {
+            e.cache = r.c
+        }
+    },
+    [
+        ['']
+    ]
+]).cache).find(m => m.exports && m.exports.default && m.exports.default.getCurrentUser !== void 0).exports.default.getCurrentUser()
+```
+
+
+### Gets All Channel Names in EveryServer u are In {ServerId,Channelid,Id,Name}
+
+<a href=""><img src="https://imgur.com/XoRipQq.jpg" style="max-width:100%;"></a>
+```bash
+Object.values(webpackJsonp.push([
+    [], {
+        ['']: (_, e, r) => {
+            e.cache = r.c
+        }
+    },
+    [
+        ['']
+    ]
+]).cache).find(m => m.exports && m.exports.default && m.exports.default.getChannels !== void 0).exports.default.getChannels()
+```
+
+### Gets All Channels Discords JS
+```bash
+function R(e) {
+            void 0 === e && (e = function(e) {
+                return !0
+            });
+            var t = l.default.getChannels();
+            r.default.forEach(t, (function(t) {
+                var n = t.getGuildId();
+                if (null != n && e(t)) {
+                    var r = b(n);
+                    if (r.count += 1, !s.GUILD_NON_CATEGORY_CHANNEL_TYPES.has(t.type) || f.default.can(p.Permissions.VIEW_CHANNEL, {
+                            channelId: t.id
+                        }) || t.id === A) {
+                        var o = (0, s.isGuildSelectableChannelType)(t.type) ? "SELECTABLE" : t.type;
+                        null != r[o] && r[o].push({
+                            comparator: t.position,
+                            channel: t
+                        })
+                    }
+                }
+            }))
+        }
+```
+
 
