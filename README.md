@@ -287,3 +287,29 @@ var u = function() {
         }();
         t.default = u
 ```
+
+### See Private Channel IDS
+<a href=""><img src="https://imgur.com/CoeFqEA.jpg" style="max-width:100%;"></a>
+
+```bash
+Object.values(webpackJsonp.push([
+    [], {
+        ['']: (_, e, r) => {
+            e.cache = r.c
+        }
+    },
+    [
+        ['']
+    ]
+]).cache).find(m => m.exports && m.exports.default && m.exports.default.getPrivateChannelIds !== void 0).exports.default.getPrivateChannelIds()
+```
+
+
+
+#### More Will Be Found And Commited to This Repo 
+### Credits 
+-  N..
+-  Lucifer
+-  charge
+-  t0ixb0x
+-  NanoSec Team
