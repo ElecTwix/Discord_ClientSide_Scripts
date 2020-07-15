@@ -304,6 +304,56 @@ Object.values(webpackJsonp.push([
 ]).cache).find(m => m.exports && m.exports.default && m.exports.default.getPrivateChannelIds !== void 0).exports.default.getPrivateChannelIds()
 ```
 
+### Support ArticleURL 
+
+```bash
+Object.values(webpackJsonp.push([
+    [], {
+        ['']: (_, e, r) => {
+            e.cache = r.c
+        }
+    },
+    [
+        ['']
+    ]
+]).cache).find(m => m.exports && m.exports.default && m.exports.default.getArticleURL !== void 0).exports.default.getArticleURL("https://pornhub.com")
+```
+
+### Support ArticleURL Function
+```bash
+t.ActivityCount = B, B.displayName = "ActivityCount";
+            var z = function(e) {
+                var t = e.className;
+                return S(T, {
+                    className: t
+                }, void 0, S(A, {
+                    onClick: function() {
+                        return window.open((0, h.getCurrentPlatformDownloadURL)())
+                    }
+                }, void 0, O.default.Messages.NUF_DOWNLOAD_APP_BUTTON_PLATFORM.format({
+                    platform: (0, h.getPlatformReadableName)()
+                })), S(x, {
+                    className: w.default.downloadButtonSubtext
+                }, void 0, O.default.Messages.INCOMPATIBLE_BROWSER.format({
+                    supportedBrowserURL: m.default.getArticleURL(b.HelpdeskArticles.SUPPORTED_BROWSERS)
+                })))
+```
+
+
+### ActionTypes 
+<a href=""><img src="https://imgur.com/iy3NQlf.jpg" style="max-width:100%;"></a>
+```bash
+Object.values(webpackJsonp.push([
+    [], {
+        ['']: (_, e, r) => {
+            e.cache = r.c
+        }
+    },
+    [
+        ['']
+    ]
+]).cache).find(m => m.exports && m.exports && m.exports.ActionTypes !== void 0).exports.ActionTypes
+```
 
 
 #### More Will Be Found And Commited to This Repo 
