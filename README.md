@@ -204,3 +204,86 @@ false = off
                     }
 ```
 
+### Discords Messages
+<a href=""><img src="https://imgur.com/64W4dk5.jpg" style="max-width:100%;"></a>
+
+```bash
+Object.values(webpackJsonp.push([
+    [], {
+        ['']: (_, e, r) => {
+            e.cache = r.c
+        }
+    },
+    [
+        ['']
+    ]
+]).cache).find(m => m.exports && m.exports.default && m.exports.default.Messages !== void 0).exports.default.Messages
+```
+### Discord Messages Function JS
+```bash
+var u = function() {
+            function e(e) {
+                this.raw = e, null != e.code && (this.code = e.code), null != e.uuid && (this.uuid = e.uuid), null != e.application_id && (this.applicationId = e.application_id), null != e.branch_id && (this.branchId = e.branch_id), null != e.context ? this.context = e.context : this.context = {}
+            }
+            var t, n, r;
+            return t = e, (n = [{
+                key: "displayMessage",
+                get: function() {
+                    if (null == this.code) return a.default.Messages.NOTICE_DISPATCH_ERROR;
+                    var e = this.context.path;
+                    switch (this.code) {
+                        case i.DispatchErrorCodes.DISK_LOW:
+                            var t = this.context,
+                                n = t.available,
+                                r = t.required,
+                                s = (0, o.formatSize)(n, {
+                                    useKibibytes: !0
+                                }),
+                                u = (0, o.formatSize)(r, {
+                                    useKibibytes: !0
+                                });
+                            return a.default.Messages.NOTICE_DISPATCH_ERROR_DISK_LOW.format({
+                                required: u,
+                                available: s
+                            });
+                        case i.DispatchErrorCodes.POST_INSTALL_FAILED:
+                            var c = this.context.name;
+                            return a.default.Messages.NOTICE_DISPATCH_ERROR_POST_INSTALL_FAILED.format({
+                                name: c
+                            });
+                        case i.DispatchErrorCodes.FILE_NAME_TOO_LONG:
+                            return a.default.Messages.NOTICE_DISPATCH_ERROR_FILE_NAME_TOO_LONG;
+                        case i.DispatchErrorCodes.POST_INSTALL_CANCELLED:
+                            return a.default.Messages.NOTICE_DISPATCH_ERROR_POST_INSTALL_CANCELLED;
+                        case i.DispatchErrorCodes.IO_PERMISSION_DENIED:
+                            return a.default.Messages.NOTICE_DISPATCH_ERROR_IO_PERMISSION_DENIED;
+                        case i.DispatchErrorCodes.NO_MANIFESTS:
+                            return a.default.Messages.NOTICE_DISPATCH_ERROR_NO_MANIFESTS;
+                        case i.DispatchErrorCodes.NOT_ENTITLED:
+                            return a.default.Messages.NOTICE_DISPATCH_ERROR_NOT_ENTITLED;
+                        case i.DispatchErrorCodes.NOT_DIRECTORY:
+                        case i.DispatchErrorCodes.DISK_PERMISSION_DENIED:
+                            return a.default.Messages.NOTICE_DISPATCH_ERROR_UNWRITABLE.format({
+                                path: e
+                            });
+                        case i.DispatchErrorCodes.INVALID_DRIVE:
+                            return a.default.Messages.NOTICE_DISPATCH_ERROR_INVALID_DRIVE.format({
+                                path: e
+                            });
+                        case i.DispatchErrorCodes.APPLICATION_LOCK_FAILED:
+                            return a.default.Messages.NOTICE_DISPATCH_APPLICATION_LOCK_FAILED;
+                        case i.DispatchErrorCodes.DISK_FULL:
+                            return a.default.Messages.NOTICE_DISPATCH_ERROR_DISK_FULL;
+                        case i.DispatchErrorCodes.API_ERROR:
+                        case i.DispatchErrorCodes.MAX_REQUEST_RETRIES_EXCEEDED:
+                            return a.default.Messages.NOTICE_DISPATCH_API_ERROR;
+                        default:
+                            return a.default.Messages.NOTICE_DISPATCH_ERROR_WITH_CODE.format({
+                                code: "" + this.code
+                            })
+                    }
+                }
+            }]) && s(t.prototype, n), r && s(t, r), e
+        }();
+        t.default = u
+```
