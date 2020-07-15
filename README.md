@@ -166,4 +166,41 @@ function R(e) {
         }
 ```
 
+### Enable/Disable embeds
+
+```bash
+Object.values(webpackJsonp.push([
+    [], {
+        ['']: (_, e, r) => {
+            e.cache = r.c
+        }
+    },
+    [
+        ['']
+    ]
+]).cache).find(m => m.exports && m.exports.default && m.exports.default.embedded !== void 0).exports.default.embedded = true
+```
+### On/Off
+```bash
+true = on 
+false = off
+```
+
+### Embed Function Discord JS
+```bash
+   function r() {
+                    return e.apply(this, arguments) || this
+                }
+                n = e, (t = r).prototype = Object.create(n.prototype), t.prototype.constructor = t, t.__proto__ = n;
+                var o, i, s, u = r.prototype;
+                return u.initialize = function() {
+                    !1 !== a.default.get("BrowserHandoffStore") && (I = p.default.embedded && ("stable" === window.GLOBAL_ENV.RELEASE_CHANNEL || !1))
+                }, u.isHandoffAvailable = function() {
+                    return I
+                }, o = r, (i = [{
+                    key: "user",
+                    get: function() {
+                        return T
+                    }
+```
 
