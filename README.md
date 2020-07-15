@@ -354,6 +354,80 @@ Object.values(webpackJsonp.push([
     ]
 ]).cache).find(m => m.exports && m.exports && m.exports.ActionTypes !== void 0).exports.ActionTypes
 ```
+### Perms 
+<a href=""><img src="https://imgur.com/xrJKtfL.jpg" style="max-width:100%;"></a>
+
+```bash
+Object.values(webpackJsonp.push([
+    [], {
+        ['']: (_, e, r) => {
+            e.cache = r.c
+        }
+    },
+    [
+        ['']
+    ]
+]).cache).find(m => m.exports && m.exports && m.exports.Permissions !== void 0).exports.Permissions
+```
+
+### RPC COMMANDS 
+<a href=""><img src="https://imgur.com/2YcClPC.jpg" style="max-width:100%;"></a>
+
+```bash
+Object.values(webpackJsonp.push([
+    [], {
+        ['']: (_, e, r) => {
+            e.cache = r.c
+        }
+    },
+    [
+        ['']
+    ]
+]).cache).find(m => m.exports && m.exports && m.exports.RPCCommands !== void 0).exports.RPCCommands
+```
+
+
+```bash
+var y = (0, r.default)({
+            CURRENT_USER_UPDATE: null,
+            GUILD_STATUS: null,
+            GUILD_CREATE: null,
+            CHANNEL_CREATE: null,
+            RELATIONSHIP_UPDATE: null,
+            VOICE_CHANNEL_SELECT: null,
+            VOICE_STATE_CREATE: null,
+            VOICE_STATE_DELETE: null,
+            VOICE_STATE_UPDATE: null,
+            VOICE_SETTINGS_UPDATE: null,
+            VOICE_SETTINGS_UPDATE_2: null,
+            VOICE_CONNECTION_STATUS: null,
+            SPEAKING_START: null,
+            SPEAKING_STOP: null,
+            GAME_JOIN: null,
+            GAME_SPECTATE: null,
+            ACTIVITY_JOIN: null,
+            ACTIVITY_JOIN_REQUEST: null,
+            ACTIVITY_SPECTATE: null,
+            ACTIVITY_INVITE: null,
+            NOTIFICATION_CREATE: null,
+            MESSAGE_CREATE: null,
+            MESSAGE_UPDATE: null,
+            MESSAGE_DELETE: null,
+            LOBBY_DELETE: null,
+            LOBBY_UPDATE: null,
+            LOBBY_MEMBER_CONNECT: null,
+            LOBBY_MEMBER_DISCONNECT: null,
+            LOBBY_MEMBER_UPDATE: null,
+            LOBBY_MESSAGE: null,
+            CAPTURE_SHORTCUT_CHANGE: null,
+            OVERLAY: null,
+            OVERLAY_UPDATE: null,
+            ENTITLEMENT_CREATE: null,
+            ENTITLEMENT_DELETE: null,
+            USER_ACHIEVEMENT_UPDATE: null,
+            READY: null,
+            ERROR: null
+```
 
 
 #### More Will Be Found And Commited to This Repo 
