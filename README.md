@@ -385,6 +385,7 @@ Object.values(webpackJsonp.push([
     ]
 ]).cache).find(m => m.exports && m.exports && m.exports.RPCCommands !== void 0).exports.RPCCommands
 ```
+### RPC COMMANDS FUNCTIONS
 
 
 ```bash
