@@ -1,5 +1,6 @@
 # Discord-Client-Side-Scripts-Docs
-
+- All by <a href="https://github.com/NanoSecc/Discord_ClientSide_Scripts">
+- All thanks the NanoSecc
 
 - Requires a Console Out put that Runs Func, {inspect element Console, etc}
 - This is AG Discords TOS So u might get banned so use a ALT Before Trying 
