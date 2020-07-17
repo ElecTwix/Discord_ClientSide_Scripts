@@ -429,6 +429,228 @@ var y = (0, r.default)({
             READY: null,
             ERROR: null
 ```
+### Has Animated Avatar Check 
+
+```bash
+Object.values(webpackJsonp.push([
+    [], {
+        ['']: (_, e, r) => {
+            e.cache = r.c
+        }
+    },
+    [
+        ['']
+    ]
+]).cache).find(m => m.exports && m.exports.default && m.exports.default.hasAnimatedAvatar !== void 0).exports.default.hasAnimatedAvatar()
+```
+
+### Has Animated Avatar Check Function 
+```bash
+function(e, t, r) {
+            "use strict";
+            Object.defineProperty(t, "__esModule", {
+                value: !0
+            }), t.getChannelIconURL = function(e, t) {
+                switch (e.type) {
+                    case l.ChannelTypes.DM:
+                        var r = e.recipients.map(n.default.getUser).filter(o.isNotNullish)[0];
+                        return null == r ? null : !0 === t && a.default.hasAnimatedAvatar(r) ? r.getAvatarURL("gif") : r.getAvatarURL();
+                    case l.ChannelTypes.GROUP_DM:
+                        return a.default.getChannelIconURL({
+                            id: e.id,
+                            icon: e.icon,
+                            applicationId: e.getApplicationId()
+                        })
+```
+
+
+
+### Can Use Emojis An 
+```bash
+Object.values(webpackJsonp.push([
+    [], {
+        ['']: (_, e, r) => {
+            e.cache = r.c
+        }
+    },
+    [
+        ['']
+    ]
+]).cache).find(m => m.exports && m.exports.default && m.exports.default.canUseAnimatedEmojis !== void 0).exports.default.canUseAnimatedEmojis("" + true) + true
+```
+
+### Can Use Emojis Everywhere
+```bash
+Object.values(webpackJsonp.push([
+    [], {
+        ['']: (_, e, r) => {
+            e.cache = r.c
+        }
+    },
+    [
+        ['']
+    ]
+]).cache).find(m => m.exports && m.exports.default && m.exports.default.canUseEmojisEverywhere !== void 0).exports.default.canUseEmojisEverywhere()
+```
+### Can Use Emojis EveryWhere Function
+```bash
+var d = u({
+                sanitizeEmojiName: function(e) {
+                    for (e = e.replace(a.EMOJI_RE, "").slice(0, a.EMOJI_MAX_LENGTH); e.length < 2;) e += "_";
+                    return e
+                },
+                getURL: function(e) {
+                    return ""
+                },
+                filterUnsupportedEmojis: function(e) {
+                    return e
+                }
+            }, n(1690).default, {
+                isEmojiFiltered: function(e, s) {
+                    var n = i.default.getCurrentUser();
+                    if (!e.guildId) return !1;
+                    if (null == s || !(0, r.isGuildTextChannelType)(s.type)) return !1;
+                    var o = e.guildId === s.getGuildId(),
+                        f = t.default.can(a.Permissions.USE_EXTERNAL_EMOJIS, n, s);
+                    return !o && !f
+                },
+                isEmojiDisabled: function(e, s, n) {
+                    void 0 === n && (n = !0);
+                    var f = i.default.getCurrentUser();
+                    if (!e.guildId) return !1;
+                    if (e.animated && !o.default.canUseAnimatedEmojis(f)) return !0;
+                    if (!e.available) return !0;
+                    if (null != s && (0, r.isGuildTextChannelType)(s.type)) {
+                        var u = e.guildId === s.getGuildId(),
+                            d = t.default.can(a.Permissions.USE_EXTERNAL_EMOJIS, f, s),
+                            _ = e.managed || o.default.canUseEmojisEverywhere(f);
+                        return !u && !(!u && d && _)
+                    }
+                    return !o.default.canUseEmojisEverywhere(f) && !(e.managed && n)
+                },
+                isInternalEmojiForGuildId: function(e, s) {
+                    return null == e.guildId || s === e.guildId
+                }
+            });
+```
+
+
+### Get Status
+<a href=""><img src="https://imgur.com/mCVaVmA.jpg" style="max-width:100%;"></a>
+
+```bash
+Object.values(webpackJsonp.push([
+    [], {
+        ['']: (_, e, r) => {
+            e.cache = r.c
+        }
+    },
+    [
+        ['']
+    ]
+]).cache).find(m => m.exports && m.exports.default && m.exports.default.getStatus !== void 0).exports.default.getStatus()
+```
+
+### Get Status Function 
+
+
+```bash
+  function I() {
+                var e = f.default.getId();
+                c[e] = u.default.getStatus(), v[e] = u.default.getActivities()
+```
+
+
+### getOnlineFriendCount 
+```bash
+Object.values(webpackJsonp.push([
+    [], {
+        ['']: (_, e, r) => {
+            e.cache = r.c
+        }
+    },
+    [
+        ['']
+    ]
+]).cache).find(m => m.exports && m.exports.default && m.exports.default.getOnlineFriendCount !== void 0).exports.default.getOnlineFriendCount()
+```
+
+### Get Online Friend Count Function 
+```bash
+i.getOnlineFriendCount = function() {
+                    return y.size
+```
+
+
+### Get All Users IDS 
+<a href=""><img src="https://imgur.com/4ZV4AuF.jpg" style="max-width:100%;"></a>
+
+
+```bash
+Object.values(webpackJsonp.push([
+    [], {
+        ['']: (_, e, r) => {
+            e.cache = r.c
+        }
+    },
+    [
+        ['']
+    ]
+]).cache).find(m => m.exports && m.exports.default && m.exports.default.getUserIds !== void 0).exports.default.getUserIds()
+```
+
+### Get All Users Function
+```bash
+ i.getUserIds = function() {
+                    return Object.keys(v)
+```
+
+
+
+### Get State
+```bash
+Object.values(webpackJsonp.push([
+    [], {
+        ['']: (_, e, r) => {
+            e.cache = r.c
+        }
+    },
+    [
+        ['']
+    ]
+]).cache).find(m => m.exports && m.exports.default && m.exports.default.getState !== void 0).exports.default.getState()
+```
+### Get State Function
+```bash
+i.getState = function() {
+                    return {
+                        presencesForGuilds: m,
+                        statuses: c,
+                        activities: v,
+                        activityMetadata: h,
+                        onlineFriends: y,
+                        clientStatuses: l
+                    }
+```
+
+
+### Get Accounts
+<a href=""><img src="https://imgur.com/OU7C8mm.jpg" style="max-width:100%;"></a>
+
+
+```bash
+Object.values(webpackJsonp.push([
+    [], {
+        ['']: (_, e, r) => {
+            e.cache = r.c
+        }
+    },
+    [
+        ['']
+    ]
+]).cache).find(m => m.exports && m.exports.default && m.exports.default.getAccounts !== void 0).exports.default.getAccounts()
+```
+
 
 
 #### More Will Be Found And Commited to This Repo 
@@ -438,3 +660,4 @@ var y = (0, r.default)({
 -  charge
 -  t0ixb0x
 -  NanoSec Team
+
