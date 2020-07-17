@@ -1,6 +1,8 @@
 # Discord-Client-Side-Scripts-Docs
 - All by [NanoSecc](https://github.com/NanoSecc/Discord_ClientSide_Scripts)
 - All thanks the NanoSecc
+- This Only developed for test purposes.
+- Any activity with tools can't be link with forked user or owner of repo.
 
 - Requires a Console Out put that Runs Func, {inspect element Console, etc}
 - This is AG Discords TOS So u might get banned so use a ALT Before Trying 
